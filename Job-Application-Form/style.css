@@ -1,0 +1,451 @@
+body{
+	display: flex;
+	align-items: center;
+	margin: 65px;
+	margin-left: 70px;
+	margin-right: 70px;
+	padding: 0;
+}
+*.category{
+	background-color: #fdfeeb;
+	text-align: center;
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+}
+ *.description{
+	background-color: #f1f1f1;
+	text-align: center;
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+}
+*.content{
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+}
+*.description div, *.category div, *.content div{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+
+.jobapplicationform{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0);
+	box-sizing: border-box;
+	width: 804px;
+}
+.title{
+	margin: 0;
+}
+.title h1{
+	text-align: center;
+	text-shadow: 6px 2px 2px gray;
+	letter-spacing: 13px;
+	font-size: 40px;
+	
+}
+
+.title .sub{
+	border-top: solid 1px;
+	border-right: solid 1px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 20px;
+}
+.title .sub .cell{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.title .sub .description{
+	background-color: #ebfef0;
+}
+.title .sub .content{
+	padding: 7px;
+}
+.title .sub .salary .content {
+	text-align: right;
+}
+.title .sub .sortation .content {
+	text-align: center;
+}
+
+.divide{
+	background: repeating-linear-gradient(-45deg,white,white 2px,#ffcccc 2px,#ffcccc 7px);
+	background-size: 100%;
+
+	border: solid 1px;
+
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+	padding-left: 10px;
+	padding-bottom: 3px;
+
+	letter-spacing: 6px;
+	font-weight: bold;
+}
+
+.page-1 .personinfo{
+	display: grid;
+	grid-template-columns: 2fr 3fr 1fr;
+	grid-template-rows: 1fr 3fr 2fr;
+
+	height: 200px;
+
+	border-top: solid 1px;
+	border-right: solid 1px;
+}
+.page-1 .picture{
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+}
+
+.page-1 .personinfo .name{
+	grid-column: 1/ span 1;
+	grid-row: 1/span 2;
+
+	display: grid;
+	grid-template-columns: 15% 85%;
+	grid-template-rows: 1fr 1fr;
+
+}
+.page-1 .personinfo .name .category{
+	grid-column: 1/span 1;
+	grid-row: 1/span 2;
+}
+	.page-1 .personinfo .name .korean{
+		grid-column: 2/span 1;
+		grid-row: 1/span 1;
+
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+		.page-1 .personinfo .name .korean .description{
+			grid-column: 1/span 1;
+		}
+		.page-1 .personinfo .name .korean .content{
+			grid-column: 2/span 1;
+		}
+
+	.page-1 .personinfo .name .english{
+		grid-column: 2/span 1;
+		grid-row: 2/span 1;
+
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+		.page-1 .personinfo .name .english .description{
+			grid-column: 1/span 1;
+		}
+		.page-1 .personinfo .name .english .content{
+			grid-column: 2/span 1;
+		}
+
+.page-1 .personinfo .personID{
+	grid-column: 2/span 1;
+	grid-row: 1/span 1;
+
+	display: grid;
+	grid-template-columns: 118px;
+}
+	.page-1 .personinfo .personID .category{
+		grid-column: 1/span 1;
+	}
+	.page-1 .personinfo .personID .content{
+		grid-column: 2/span 1;
+	}
+
+.page-1 .personinfo .contact{
+	grid-column: 2/span 1;
+	grid-row: 2/span 1;
+
+	display: grid;
+	grid-template-columns: 41px;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+	.page-1 .personinfo .contact .category{
+		grid-column: 1/span 1;
+		grid-row: 1/span 3;
+	}
+	.page-1 .personinfo .contact .home{
+		grid-column: 2/span 1;
+		grid-row: 1/span 1;
+
+		display: grid;
+		grid-template-columns: 77px;
+	}
+		.page-1 .personinfo .contact .home .description{
+			grid-column: 1/span 1;
+		}
+		.page-1 .personinfo .contact .home .content{
+			grid-column: 2/span 1;
+		}	
+
+	.page-1 .personinfo .contact .phone{
+		grid-column: 2/span 1;
+		grid-row: 2/span 1;
+
+		display: grid;
+		grid-template-columns: 77px;
+	}
+		.page-1 .personinfo .contact .phone .description{
+			grid-column: 1/span 1;
+		}
+		.page-1 .personinfo .contact .phone .content{
+			grid-column: 2/span 1;
+		}	
+
+	.page-1 .personinfo .contact .mail{
+		grid-column: 2/span 1;
+		grid-row: 3/span 1;
+
+		display: grid;
+		grid-template-columns: 77px;
+	}
+		.page-1 .personinfo .contact .mail .description{
+			grid-column: 1/span 1;
+		}
+		.page-1 .personinfo .contact .mail .content{
+			grid-column: 2/span 1;
+		}
+
+.page-1 .personinfo .picture{
+	grid-column: 3/span 1;
+	grid-row: 1/span 3;
+}
+.page-1 .personinfo .picture div{
+	position: relative;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.page-1 .personinfo .adress{
+	grid-column: 1/span 2;
+	grid-row: 3/span 1;
+
+	display: grid;
+	grid-template-columns: 14.5%;
+}
+	.page-1 .personinfo .adress .category{
+		grid-column: 1/span 1;
+	}
+	.page-1 .personinfo .adress .content{
+		grid-column: 2/span 1;
+		padding-top: 5px;
+		padding-left: 10px;
+	}
+
+
+
+
+.page-1 .educational_background{
+	display: grid;
+	grid-template-columns: 1fr 1fr 2.5fr 1.25fr 0.8fr 1fr;
+
+	border-top: solid 1px;
+	border-right: solid 1px;
+	height: 201px;
+}
+.page-1 .educational_background .columns_cell{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.page-1 .educational_background .category, .page-1 .educational_background .content{
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+	text-align: center;
+	padding-top: 4px;
+}
+
+.page-1 .military_service .content,.page-1 .military_service .category{
+	border-left: solid 1px;
+	border-bottom: solid 1px;
+}
+.page-1 .military_service{
+	display: grid;
+	grid-template-columns: 1fr 1.75fr 1fr 1.25fr 0.5fr 1fr 1.75fr 1fr 6fr;
+	grid-template-rows: 1fr 1fr;
+
+	height: 75px;
+	border-top: solid 1px;
+	border-right: solid 1px;
+}
+.page-1 .military_service *.category div,.page-1 .military_service .military div{
+	position: relative;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-55%);
+}
+	.page-1 .military_service .military{
+		grid-column: 1/span 4;
+		grid-row: 1/span 1;
+		border-left: solid 1px;
+		border-bottom: solid 1px;
+	}
+	.page-1 .military_service .reason{
+		grid-column: 5/span 5;
+		display: grid;
+		grid-template-columns: 1fr 5.05fr;
+	}
+	.page-1 .military_service .group{
+		grid-column: 1/span 2;
+		display: grid;
+		grid-template-columns: 1fr 1.3fr;
+	}
+	.page-1 .military_service .classes{
+		grid-column: 3/span 3;
+		display: grid;
+		grid-template-columns: 1fr 1.3fr;
+	}
+	.page-1 .military_service .branch{
+		grid-column: 6/span 2;
+		display: grid;
+		grid-template-columns: 1fr 1.3fr;
+	}
+	.page-1 .military_service .term{
+		grid-column: 8/span 2;
+		display: grid;
+		grid-template-columns: 1fr 4.9fr;
+	}
+
+.page-1 .ability *.category, .page-1 .ability *.content, .page-1 .ability *.description{
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+}
+.page-1 .ability{
+	display: grid;
+	height: 95px;
+	grid-template-columns: 1fr 1fr 1.25fr;
+	border-top: solid 1px;
+	border-right: solid 1px;
+}
+	.page-1 .ability .foreign_lang{
+		grid-column: 1;
+		display: grid;
+		grid-template-columns: 0.3fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+		.page-1 .ability .foreign_lang .category{
+			grid-column: 1;
+			grid-row: 1/span 3;
+		}
+		.page-1 .ability .foreign_lang .lang{
+			grid-column: 2;
+			grid-row: 1/span 3;
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr;
+		}
+		.page-1 .ability .foreign_lang .test{
+			grid-column: 3;
+			grid-row: 1/span 3;
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr;
+		}
+		.page-1 .ability .foreign_lang .score{
+			grid-column: 4;
+			grid-row: 1/span 3;
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr;
+		}
+	.page-1 .ability .computer{
+		grid-column: 2;
+		display: grid;
+		grid-template-columns: 0.3fr 2fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+		.page-1 .ability .computer .category{
+			grid-column: 1;
+			grid-row: 1/span 3;
+		}
+	.page-1 .ability .certificate{
+		grid-column: 3;
+		display: grid;
+		grid-template-columns: 0.3fr 1fr 1.25fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+		.page-1 .ability .certificate .category{
+			grid-column: 1;
+			grid-row: 1/span 3;
+		}
+		.page-1 .ability .certificate .date{
+			grid-column: 2;
+			grid-row: 1/span 3;
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr;
+		}
+		.page-1 .ability .certificate .kinds{
+			grid-column: 3;
+			grid-row: 1/span 3;
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr;
+		}
+		.page-1 .ability .certificate .publisher{
+			grid-column: 4;
+			grid-row: 1/span 3;
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr;
+		}
+		.page-1 .ability .computer .content div{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
+		}
+
+.page-1 .family{
+	border-top: solid 1px;
+	border-right: solid 1px;
+
+	height: 190px;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr 2fr 2fr 1fr 1fr 2fr;
+}
+	.page-1 .family .relationship{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	.page-1 .family .name{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	.page-1 .family .age{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	.page-1 .family .academic{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	.page-1 .family .job{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	.page-1 .family .position{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	.page-1 .family .live{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	.page-1 .family .etc{
+		display: grid;
+		grid-template-rows: 1fr 5fr;
+	}
+		.page-1 .family .etc .content div{
+			position: relative;
+
+			text-align: center;
+		}
+
+.page-2{
+	margin-top:150px;
+}
+.page-2 .main .content{
+	height: 250px;
+	border: solid 1px;
+}
